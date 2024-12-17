@@ -1,0 +1,135 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header .nav-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+header .nav-menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header .nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .toggle-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Content Layout */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.main-content {
+    width: 70%;
+}
+
+.post {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0078FF;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .social-links a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    header .toggle-menu {
+        display: block;
+    }
+
+    header .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    header .nav-menu ul li {
+        padding: 10px;
+    }
+
+    header .nav-menu ul li a {
+        color: white;
+    }
+
+    header .nav-menu.active {
+        display: flex;
+    }
+}

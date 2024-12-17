@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog</title>
+    <link rel="stylesheet" href="proj2.css">
+    <script src="proj2.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>My Blog</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-menu" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="content-container">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <h2>Recent Posts</h2>
+            <ul>
+                <li><a href="#">Blog Post 1</a></li>
+                <li><a href="#">Blog Post 2</a></li>
+                <li><a href="#">Blog Post 3</a></li>
+            </ul>
+        </aside>
+
+        <!-- Blog Posts Section -->
+        <main class="main-content">
+            <article class="post">
+                <img src="post1.jpg" alt="Blog Post 1">
+                <h2>Blog Post Title 1</h2>
+                <p>This is a summary of the first blog post. Content of the blog...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article class="post">
+                <img src="post2.jpg" alt="Blog Post 2">
+                <h2>Blog Post Title 2</h2>
+                <p>This is a summary of the second blog post. Content of the blog...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </main>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>
